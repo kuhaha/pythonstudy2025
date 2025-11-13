@@ -281,11 +281,11 @@ Pythonプログラム開発環境の概要を説明する。詳細について�
 
 **5.1 `Jupyter`によるブラウザ上でのPythonプログラミング**
 
-![Jupyter](img\JupyterNotebook07.png,"jupyter")
+![Jupyter](img/JupyterNotebook07.png)
 
 **5.3 クラウド環境(`Google Colaboratory`)上でのPythonプログラミング**
 
-![colab](img\colab-1.jpg)
+![colab](img/colab-1.jpg)
 
 **5.3 `VSCode`等でのPythonプログラミング**
 
