@@ -135,7 +135,6 @@ print(f"grade_points={grade_points}")
 
 # 次に、sum()関数を適用して、GPAを計算する
 print(f"gpa={sum(grade_points)/sum(credits):.3f}")
-
 #出力：gpa=2.385
 ```
 
