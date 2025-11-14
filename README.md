@@ -263,7 +263,7 @@ print(f"foo.PI={foo.PI}")
 **ファイル名：**`main2.py` (**モジュール`foo`から`calc`を読み込む**)
 
 ```python
-# でモジュールfooから名前calc, PIをインポート
+# モジュールfooから名前calc, PIをインポート
 from foo import calc, PI
 grade = 89    
 
