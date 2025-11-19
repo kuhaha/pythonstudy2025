@@ -16,7 +16,9 @@
 #文字列は、ダブルクォートでもシングルクォートで囲んでもよい
 lang = "Python"
 county = '九州'
+
 # lang, county = 'Python', '九州' # と書くこともできる。詳しくは「タプル」についての説明を参照
+
 #print()関数で変数や文字列・数値のリテラルを出力する 
 print(lang)
 print(county)
