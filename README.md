@@ -3,7 +3,7 @@
 ## Pythonプログラミング基礎編～基礎からデータ解析まで～
 
 1. 変数・出力・文字列・  `f`文字列
-2. Pythonの基本データ構造（リスト・タプル・辞書）
+2. Pythonの基本的なデータ構造（リスト・タプル・辞書・集合 (Set)）
 3. Pythonの制御文（`if`文・`for`文）
 4. Pythonの関数定義・モジュール
 5. データ解析やAIに関するPythonプログラミング
@@ -47,7 +47,7 @@ print(f"半径={r:03d}, 円周率={pi:.3f}, 面積={r*r*pi:.0f}")
 
 
 
-### 2. Pythonの基本データ構造（リスト・タプル・辞書）
+### 2. Pythonの基本的なデータ構造（リスト・タプル・辞書・集合）
 
 **2.1 リスト（`list`）：`[要素1, 要素2, ....]`：要素の追加変更可能**
 
@@ -123,8 +123,25 @@ print(words.get('ChatGPT'))
 print(words.get('ChatGPT', 'わからない'))
 #出力：わからない
 ```
+**2.4 集合(set)**
 
-**2.4 リスト内包表記（list comprehensions）：リストの要素に処理を適用する**
+今回は入れ忘れたが、集合とは順序なしの一意な要素のコレクション。重複を許さず、数学的な集合演算をサポートする。
+
+```python
+itemset1 = {'おにぎり', 'サンドイッチ', 'お茶', 'お弁当'}
+itemset2 = {'たばこ','お茶','お弁当','缶ビール'}
+
+print(f"和集合：itemset1 | itemset2 = {itemset1 | itemset2}") 
+#和集合：itemset1 | itemset2 = {'缶ビール', 'たばこ', 'お茶', 'サンドイッチ', 'お弁当', 'おにぎり'}
+
+print(f"共通部分：itemset1 & itemset2 = {itemset1 & itemset2}") 
+#共通部分：itemset1 & itemset2 = {'お茶', 'お弁当'}
+
+print(f"差集合：itemset1 - itemset2 = {itemset1 - itemset2}") 
+#差集合：itemset1 - itemset2 = {'おにぎり', 'サンドイッチ'}
+```
+
+**2.5 リスト内包表記（list comprehensions）：リストの要素に処理を適用する**
 
 ```python
 point = {'S':4, 'A':3, 'B': 2, 'C':1, 'D':0, 'E':0}
