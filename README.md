@@ -80,6 +80,7 @@ print(f"list2: {list2}, sum={sum(list2)}")
 import math
 a = (1.2, 1.5)
 b = (0, 2.1)
+# 二点a,b間の距離を求める
 d = math.sqrt((a[0]-b[0])*(a[0]-b[0]) + (a[1]-b[1])*(a[1]-b[1]))
 
 print(f"a={a}, b={b}, d={d:.3f}")
